@@ -1,0 +1,56 @@
+{
+  "name": "coc-frontend",
+  "author": {
+    "name": "Tim Holmes-Mitra",
+    "email": "tim.holmes.mitra@broadhaven.tech",
+    "url": "https://broadhaven.tech"
+  },
+  "version": "0.2.0.rc.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "latest",
+    "@fortawesome/free-brands-svg-icons": "latest",
+    "@fortawesome/free-regular-svg-icons": "latest",
+    "@fortawesome/free-solid-svg-icons": "latest",
+    "@fortawesome/react-fontawesome": "latest",
+    "@material-ui/core": "latest",
+    "@material-ui/styles": "latest",
+    "apollo-boost": "latest",
+    "date-fns": "latest",
+    "ethers": "latest",
+    "graphql": "latest",
+    "graphql-tag": "latest",
+    "react": "next",
+    "react-apollo": "latest",
+    "react-dom": "next",
+    "react-error-boundary": "latest",
+    "react-kawaii": "latest",
+    "react-router": "latest",
+    "react-router-dom": "latest",
+    "react-scripts": "latest"
+  },
+  "devDependencies": {
+    "@types/jest": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/react-router": "latest",
+    "@types/react-router-dom": "latest",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "proxy": "http://localhost:8080/"
+}
