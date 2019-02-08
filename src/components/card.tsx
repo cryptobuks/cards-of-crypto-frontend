@@ -27,7 +27,7 @@ interface IProps {
       token: string
     }
   }
-  client: ApolloClient<CardLocal>
+  client: ApolloClient<ApolloCache>
 }
 
 const Card: React.SFC<IProps> = ({ match, client }) => {
@@ -38,11 +38,10 @@ const Card: React.SFC<IProps> = ({ match, client }) => {
 
   const onSubmit = async (answer: string) => {
     try {
-      const result = await client.query({
+      const result = await client.query<{ getCard: Card }>({
         query: GET_CARD_QUERY,
         variables: { token, answer }
       })
-      // @ts-ignore
       setCard(result.data.getCard)
     } catch (error) {
       console.error(error)

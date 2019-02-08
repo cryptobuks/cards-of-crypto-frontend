@@ -2,7 +2,8 @@
 
 declare module "react-kawaii"
 
-declare type CardLocal = {
+declare type ApolloCache = {
+  // TODO: refactor the local cache
   from: string
   to: string
   title: string

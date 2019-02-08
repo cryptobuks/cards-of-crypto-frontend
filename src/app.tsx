@@ -4,6 +4,7 @@ import FAQ from "./page/faq"
 import Footer from "./components/footer"
 import Header from "./components/header"
 import Home from "./page/home"
+import Create from "./page/create"
 import Card from "./page/card"
 import Order from "./page/order"
 import UnknownRoute from "./page/unknown-route"
@@ -15,7 +16,7 @@ const App = () => (
     <Header />
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/create" component={Home} />
+      <Route path="/create" component={Create} />
       <Route path="/order/:id" component={Order} />
       <Route path="/card/:token" component={Card} />
       <Route path="/faq" component={FAQ} />
